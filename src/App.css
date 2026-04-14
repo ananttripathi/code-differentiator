@@ -515,12 +515,66 @@ body {
 
 /* ── Footer ── */
 .app-footer {
-  padding: 16px 24px;
+  padding: 14px 24px;
   text-align: center;
   font-size: 0.78rem;
   color: #94a3b8;
   border-top: 1px solid #e2e8f0;
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-privacy {
+  color: #94a3b8;
+}
+
+.footer-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #64748b;
+}
+
+.footer-name {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-name:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-divider {
+  color: #cbd5e1;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: #94a3b8;
+  transition: color 0.15s;
+}
+
+.social-link:hover {
+  color: #4f46e5;
+}
+
+.social-link svg {
+  width: 16px;
+  height: 16px;
 }
 
 /* ── Char Diff ── */
@@ -961,4 +1015,20 @@ body {
   background: #1a1829;
   border-top-color: #2a2740;
   color: #4a4a6a;
+}
+
+[data-theme="dark"] .footer-author {
+  color: #64748b;
+}
+
+[data-theme="dark"] .footer-divider {
+  color: #2a2740;
+}
+
+[data-theme="dark"] .social-link {
+  color: #4a4a6a;
+}
+
+[data-theme="dark"] .social-link:hover {
+  color: #818cf8;
 }

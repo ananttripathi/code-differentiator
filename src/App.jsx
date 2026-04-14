@@ -76,7 +76,7 @@ export default function App() {
               <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
             </svg>
             <div>
-              <h1 className="header-title">DiffTool</h1>
+              <h1 className="header-title">DiffLens</h1>
               <p className="header-subtitle">Code &amp; text differentiator</p>
             </div>
           </div>
@@ -211,7 +211,33 @@ export default function App() {
       </main>
 
       <footer className="app-footer">
-        <p>Runs entirely in your browser — no data is sent to any server</p>
+        <p className="footer-privacy">Runs entirely in your browser — no data is sent to any server</p>
+        <div className="footer-author">
+          <span>Built by <a href="https://ananttripathi.github.io/Anant-Portfolio/" target="_blank" rel="noopener noreferrer" className="footer-name">Anant Tripathi</a></span>
+          <span className="footer-divider">·</span>
+          <div className="footer-socials">
+            {/* LinkedIn */}
+            <a href="https://linkedin.com/in/ananttripathiak" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            {/* GitHub */}
+            <a href="https://github.com/ananttripathi" target="_blank" rel="noopener noreferrer" title="GitHub" className="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            {/* Portfolio */}
+            <a href="https://ananttripathi.github.io/Anant-Portfolio/" target="_blank" rel="noopener noreferrer" title="Portfolio" className="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+            {/* Kaggle */}
+            <a href="https://www.kaggle.com/anantkumartripathi" target="_blank" rel="noopener noreferrer" title="Kaggle" className="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.334"/></svg>
+            </a>
+            {/* HuggingFace */}
+            <a href="https://huggingface.co/ananttripathiak" target="_blank" rel="noopener noreferrer" title="Hugging Face" className="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zm0 2c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm-3.5 5.5c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5S10 10.828 10 10s-.672-1.5-1.5-1.5zm7 0c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zM12 13c-2.21 0-4 1.343-4 3h8c0-1.657-1.79-3-4-3z"/></svg>
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   )

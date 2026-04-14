@@ -171,6 +171,12 @@ export default function App() {
               >
                 Unified
               </button>
+              <button
+                className={`toggle-btn${viewType === 'char' ? ' active' : ''}`}
+                onClick={() => setViewType('char')}
+              >
+                Char Diff
+              </button>
             </div>
           </div>
         </div>

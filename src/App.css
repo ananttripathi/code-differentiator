@@ -891,35 +891,69 @@ body {
   border-color: #2a2740;
 }
 
+/* ── All borders inside diff ── */
+[data-theme="dark"] .diff-output * {
+  border-color: #2a2740 !important;
+}
+
+/* ── File wrapper & header ── */
+[data-theme="dark"] .diff-output .d2h-file-wrapper {
+  background: #1a1829 !important;
+}
+
 [data-theme="dark"] .diff-output .d2h-file-header {
-  background: #13112b;
-  border-bottom-color: #2a2740;
-  color: #94a3b8;
+  background: #13112b !important;
+  color: #94a3b8 !important;
 }
 
-[data-theme="dark"] .diff-output .d2h-file-name {
-  color: #a5b4fc;
+[data-theme="dark"] .diff-output .d2h-file-name,
+[data-theme="dark"] .diff-output .d2h-file-stats {
+  color: #a5b4fc !important;
 }
 
-[data-theme="dark"] .diff-output .d2h-diff-table {
-  background: #1a1829;
-  color: #e2e8f0;
+[data-theme="dark"] .diff-output .d2h-tag {
+  background: #2a2740 !important;
+  color: #94a3b8 !important;
 }
 
+/* ── Table & base cells ── */
+[data-theme="dark"] .diff-output .d2h-diff-table,
+[data-theme="dark"] .diff-output tbody,
+[data-theme="dark"] .diff-output tr,
+[data-theme="dark"] .diff-output td {
+  background: #1a1829 !important;
+  color: #e2e8f0 !important;
+}
+
+/* ── Line numbers ── */
 [data-theme="dark"] .diff-output .d2h-code-linenumber,
 [data-theme="dark"] .diff-output .d2h-code-side-linenumber {
   background: #13112b !important;
   color: #4a4a6a !important;
-  border-color: #2a2740 !important;
 }
 
+/* ── Unchanged / context lines ── */
+[data-theme="dark"] .diff-output .d2h-cntx td,
+[data-theme="dark"] .diff-output .d2h-cntx .d2h-code-linenumber,
+[data-theme="dark"] .diff-output .d2h-cntx .d2h-code-side-linenumber {
+  background: #1a1829 !important;
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .diff-output .d2h-cntx .d2h-code-linenumber,
+[data-theme="dark"] .diff-output .d2h-cntx .d2h-code-side-linenumber {
+  color: #4a4a6a !important;
+}
+
+/* ── Code line content ── */
 [data-theme="dark"] .diff-output .d2h-code-line,
-[data-theme="dark"] .diff-output .d2h-code-side-line {
-  background: #1a1829;
-  color: #e2e8f0;
+[data-theme="dark"] .diff-output .d2h-code-side-line,
+[data-theme="dark"] .diff-output .d2h-code-line-ctn {
+  background: transparent !important;
+  color: #e2e8f0 !important;
 }
 
-[data-theme="dark"] .diff-output .d2h-ins,
+/* ── Inserted lines ── */
 [data-theme="dark"] .diff-output .d2h-ins td {
   background: #0d2b1a !important;
   color: #86efac !important;
@@ -931,7 +965,20 @@ body {
   color: #4ade80 !important;
 }
 
-[data-theme="dark"] .diff-output .d2h-del,
+[data-theme="dark"] .diff-output .d2h-ins .d2h-code-line-ctn,
+[data-theme="dark"] .diff-output .d2h-ins .d2h-code-line {
+  color: #86efac !important;
+}
+
+/* ── Inline inserted chars ── */
+[data-theme="dark"] .diff-output .d2h-ins ins,
+[data-theme="dark"] .diff-output .d2h-code-line ins {
+  background: #166534 !important;
+  color: #bbf7d0 !important;
+  text-decoration: none !important;
+}
+
+/* ── Deleted lines ── */
 [data-theme="dark"] .diff-output .d2h-del td {
   background: #2d0d0d !important;
   color: #fca5a5 !important;
@@ -943,12 +990,34 @@ body {
   color: #f87171 !important;
 }
 
-[data-theme="dark"] .diff-output .d2h-info {
-  background: #13112b !important;
-  color: #6366f1 !important;
+[data-theme="dark"] .diff-output .d2h-del .d2h-code-line-ctn,
+[data-theme="dark"] .diff-output .d2h-del .d2h-code-line {
+  color: #fca5a5 !important;
 }
 
-[data-theme="dark"] .diff-output .d2h-emptyplaceholder {
+/* ── Inline deleted chars ── */
+[data-theme="dark"] .diff-output .d2h-del del,
+[data-theme="dark"] .diff-output .d2h-code-line del {
+  background: #7f1d1d !important;
+  color: #fecaca !important;
+  text-decoration: none !important;
+}
+
+/* ── Info / hunk header ── */
+[data-theme="dark"] .diff-output .d2h-info td,
+[data-theme="dark"] .diff-output .d2h-info {
+  background: #1e1b3d !important;
+  color: #818cf8 !important;
+}
+
+/* ── Empty placeholder (side-by-side) ── */
+[data-theme="dark"] .diff-output .d2h-emptyplaceholder,
+[data-theme="dark"] .diff-output .d2h-code-side-emptyplaceholder {
+  background: #13112b !important;
+}
+
+[data-theme="dark"] .diff-output .d2h-emptyplaceholder td,
+[data-theme="dark"] .diff-output .d2h-code-side-emptyplaceholder td {
   background: #13112b !important;
 }
 

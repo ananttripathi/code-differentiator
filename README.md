@@ -1,18 +1,20 @@
-# DiffTool
+# DiffLens
 
 A fast, fully **client-side** code and text diff tool. Paste snippets or upload files, pick a view, and compare — nothing leaves your browser.
 
 **Live app → [ananttripathi.github.io/code-differentiator](https://ananttripathi.github.io/code-differentiator/)**
+
+Built by **[Anant Tripathi](https://ananttripathi.github.io/Anant-Portfolio/)** · [LinkedIn](https://linkedin.com/in/ananttripathiak) · [GitHub](https://github.com/ananttripathi) · [Kaggle](https://www.kaggle.com/anantkumartripathi) · [Hugging Face](https://huggingface.co/ananttripathiak)
 
 ---
 
 ## Screenshots
 
 ### Light mode
-![DiffTool light mode](docs/screenshot-light.png)
+![DiffLens light mode](docs/screenshot-light.png)
 
 ### Dark mode
-![DiffTool dark mode](docs/screenshot-dark.png)
+![DiffLens dark mode](docs/screenshot-dark.png)
 
 ### Char Diff view
 ![Char Diff — character-level highlights](docs/screenshot-char-diff.gif)
